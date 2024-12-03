@@ -5,7 +5,7 @@ mod location_id_list;
 
 /// https://adventofcode.com/2024/day/1
 pub fn solve_historian_hysteria() {
-    let input = fs::read_to_string("day_1_input.txt").expect("Could not read input.");
+    let input = fs::read_to_string("./day_1/input.txt").expect("Could not read input.txt.");
     let location_ids = parse_input(input);
     let difference = calculate_distance(location_ids.clone());
     println!("total difference is {difference}");
